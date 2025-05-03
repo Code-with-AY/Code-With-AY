@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aryan | Portfolio</title>
+  <style>
+    /* General resets */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e272e; /* Clean dark background */
+      color: #fff;
+      display: flex;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px 20px;
+      position: fixed;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .sidebar h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00e3ae;
+    }
+
+    .sidebar nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar nav ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar nav ul li a {
+      text-decoration: none;
+      color: #00e3ae;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .sidebar nav ul li a:hover {
+      color: #ffffff;
+      transform: scale(1.1);
+    }
+
+    /* Main content */
+    .main-content {
+      margin-left: 270px;
+      padding: 40px;
+      width: calc(100% - 270px);
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #00e3ae;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    p, li {
+      font-size: 1.2em;
+      line-height: 1.8;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #ffe06b;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      color: #ffffff;
+      transform: scale(1.1);
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .sidebar nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      .sidebar nav ul li {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Aryan</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Hi, I'm Aryan — a passionate data analyst and AI/ML enthusiast. Explore my portfolio to know more!</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi there! I'm Aryan, a passionate and enthusiastic Web Developer with a strong love for creating innovative and user-friendly websites. I specialize in front-end development and am constantly working to improve my skills in HTML, CSS, JavaScript, and Python.</p>
+      <p>I am currently pursuing my B.Tech in Artificial Intelligence and Machine Learning at Dronacharya College of Engineering, and I’m constantly seeking new challenges and opportunities to grow. When I’m not coding, I enjoy learning about new web development trends, exploring new technologies, and improving my skills.</p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>You can download my <a href="resume.pdf" download>resume here</a>.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech in AI & ML</strong> — Dronacharya College of Engineering (2024–2028)</li>
+        <li><strong>12th Grade</strong> — Malviya Siksha Sadan Sr. Sec. School (2022–2023)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: aryanrao9671@gmail.com</p>
+      <p>Phone: +91 9671505913</p>
+      <p>Location: Gurugram, Haryana</p>
+    </section>
+  </div>
+</body>
+</html>
